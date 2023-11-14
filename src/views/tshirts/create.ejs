@@ -1,0 +1,60 @@
+<%- include('../layouts/header', {title: 'Create Tshirt'}); -%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="alert alert-success text-center">Create a new Tshirt</h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+
+        <form action="/tshirts" method="post" class="row">
+            <div class="col-6">
+                <label for="color" class="form-label">Color</label>
+                <input type="text" name="color" id="color" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="talla" class="form-label">Talla</label>
+                <input type="text" name="talla" id="talla" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="tipo" class="form-label">Tipo</label>
+                <input type="text" name="tipo" id="tipo" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="marca" class="form-label">Marca</label>
+                <input type="text" name="marca" id="marca" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="text" name="precio" id="precio" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="disponible" class="form-label">Disponible</label>
+                <input type="text" name="disponible" id="disponible" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="stock" class="form-label">Stock</label>
+                <input type="text" name="stock" id="stock" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="fechaLanzamiento" class="form-label">Fecha Lanzamiento</label>
+                <input type="text" name="fechaLanzamiento" id="fechaLanzamiento" class="form-control" required>
+            </div>
+            <div class="col-12 d-grid mt-4">
+                <button type="submit" class="btn btn-outline-success">Create</button>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-12 d-grid mt-4">
+                <a href="/tshirts" class="btn btn-outline-secondary">Back to Tshirts list</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../layouts/footer'); -%>
